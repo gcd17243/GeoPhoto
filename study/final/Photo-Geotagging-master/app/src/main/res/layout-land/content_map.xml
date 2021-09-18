@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.GCD17243.photogeotag.CreatePOIActivity.MapActivity"
+    tools:showIn="@layout/activity_map">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map_fragment"
+        map:cameraBearing="0"
+        map:cameraTargetLat="51.236220"
+        map:cameraTargetLng="-0.570409"
+        map:cameraTilt="30"
+        map:cameraZoom="13"
+        map:mapType="normal"
+        map:uiCompass="false"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="false"
+        map:uiZoomGestures="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/details_fragment"
+        android:name="com.example.GCD17243.photogeotag.CreatePOIActivity.DetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" />
+
+</LinearLayout>
